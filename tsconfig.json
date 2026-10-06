@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // JavaScript version produced by the compiler
+    "target": "ES2022",
+
+    // Use modern Node.js module behaviour
+    "module": "NodeNext",
+
+    // Find imported files using modern Node.js rules
+    "moduleResolution": "NodeNext",
+
+    // Source-code directory
+    "rootDir": "./src",
+
+    // Compiled JavaScript directory
+    "outDir": "./dist",
+
+    "types": ["node"],
+
+    // Enable TypeScript's main strict safety checks
+    "strict": true,
+
+    // Improve CommonJS/ES module compatibility
+    "esModuleInterop": true,
+
+    // Do not deeply verify dependency declaration files
+    "skipLibCheck": true
+  },
+
+  // Compile TypeScript files anywhere beneath src
+  "include": ["./src/**/*.ts"],
+
+  // Do not discover dependency files as project source files
+  "exclude": ["node_modules"]
+}
